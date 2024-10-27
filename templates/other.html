@@ -1,0 +1,12 @@
+{ % extends "base.html" %}
+{ % block title %}Index Page{ % endblock %}
+
+{ % block content %}
+    <h1>Hello</h1>
+    <ul>
+      {% for item in mylist %}
+        <li>{{item }}</li>
+      {% endfor %}
+    </ul>
+    <p>{{ mylist }}</p>
+{ % endblock %}
